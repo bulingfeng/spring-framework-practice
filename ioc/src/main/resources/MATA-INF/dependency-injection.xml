@@ -10,6 +10,9 @@
     <import resource="./dependency-lookup.xml"/>
 
     <!-- 手动配置-->
+    <!-- 参考文档
+        https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction
+    -->
 <!--    <bean id="userRepository" class="com.bulingfeng.repository.UserRepository">-->
 <!--        <property name="collection">-->
 <!--            <util:list>-->
