@@ -8,7 +8,12 @@
         <property name="id" value="1"></property>
         <property name="name" value="bulingfeng"></property>
     </bean>
-
+<!--    这里必须添加上primary=true,否则按照类型进行查找会出现多个,因为superUser和user都是属于user的
+        当按照类型进行单个bean查找的时候,只查询primay=true的这个对象
+-->
+    <bean id="superUser" class="com.bulingfeng.domain.SuperUser" parent="user" primary="true">
+        <property name="address" value="china"></property>
+    </bean>
     <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
         <property name="targetBeanName" value="user"></property>
     </bean>
