@@ -13,6 +13,7 @@
 
     <modules>
         <module>ioc</module>
+        <module>spring-bean</module>
     </modules>
     <properties>
         <spring.version>5.2.2.RELEASE</spring.version>
@@ -57,12 +58,6 @@
 
     <!-- Spring 依赖 -->
     <dependencies>
-        <!-- Spring IoC 核心依赖 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
